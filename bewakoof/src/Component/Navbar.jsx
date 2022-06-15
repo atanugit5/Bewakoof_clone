@@ -27,11 +27,13 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 import { BsCart3 } from "react-icons/bs";
+import { Link as NLink } from "react-router-dom";
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
+    <Box w="100%" position={"fixed"}>
     <Box>
       <Flex
         bg={useColorModeValue("white", "gray.800")}
@@ -44,6 +46,7 @@ const Navbar = () => {
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
       >
+        {/* nhkll */}
         <Flex
           flex={{ base: 1, md: "auto" }}
           ml={{ base: -2 }}
@@ -59,8 +62,9 @@ const Navbar = () => {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
+          <NLink
+            to={"/"}
+            textalign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
@@ -70,7 +74,7 @@ const Navbar = () => {
               w="180px"
               h="20px"
             />
-          </Text>
+          </NLink>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
@@ -92,19 +96,20 @@ const Navbar = () => {
           >
             Login
           </Button>
-          <Link to="/cart">
+          <NLink to="/cart">
             <Box mb="-8px" textAlign="center">
               {/* <CartCounter /> */}
             </Box>
 
             <Icon as={BsCart3} fontSize={"30px"} />
-          </Link>
+          </NLink>
         </Stack>
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
         {/* <MobileNav /> */}
       </Collapse>
+    </Box>
     </Box>
   );
 };
@@ -119,11 +124,11 @@ const DesktopNav = () => {
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
-              <Link
+              <NLink
                 p={2}
-                href={navItem.href ?? "#"}
-                fontSize={"sm"}
-                fontWeight={500}
+                to={navItem.href ?? "#"}
+                fontSize={"lg"}
+                fontWeight={100}
                 color={linkColor}
                 _hover={{
                   textDecoration: "none",
@@ -131,7 +136,7 @@ const DesktopNav = () => {
                 }}
               >
                 {navItem.label}
-              </Link>
+              </NLink>
             </PopoverTrigger>
 
             {navItem.children && (
@@ -160,8 +165,8 @@ const DesktopNav = () => {
 const DesktopSubNav = ({ label, href, subLabel }) => {
   return (
     <Box>
-      <Link
-        href={href}
+      <NLink
+        to={href ?? "#"}
         role={"group"}
         display={"block"}
         rounded={"md"}
@@ -190,203 +195,203 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
         >
         </Flex> */}
         </Stack>
-      </Link>
+      </NLink>
     </Box>
   );
 };
 
-const MobileNav = () => {
-  return (
-    <Stack
-      bg={useColorModeValue("white", "gray.800")}
-      p={4}
-      display={{ md: "none" }}
-    >
-      {NAV_ITEMS.map((navItem) => (
-        <MobileNavItem key={navItem.label} {...navItem} />
-      ))}
-    </Stack>
-  );
-};
+// const MobileNav = () => {
+//   return (
+//     <Stack
+//       bg={useColorModeValue("white", "gray.800")}
+//       p={4}
+//       display={{ md: "none" }}
+//     >
+//       {NAV_ITEMS.map((navItem) => (
+//         <MobileNavItem key={navItem.label} {...navItem} />
+//       ))}
+//     </Stack>
+//   );
+// };
 
-const MobileNavItem = ({ label, children, href }) => {
-  const { isOpen, onToggle } = useDisclosure();
+// const MobileNavItem = ({ label, children, href }) => {
+//   const { isOpen, onToggle } = useDisclosure();
 
-  return (
-    <Stack spacing={4} onClick={children && onToggle}>
-      <Flex
-        py={2}
-        as={Link}
-        href={href ?? "#"}
-        justify={"space-between"}
-        align={"center"}
-        _hover={{
-          textDecoration: "none",
-        }}
-      >
-        <Text
-          fontWeight={600}
-          color={useColorModeValue("gray.600", "gray.200")}
-        >
-          {label}
-        </Text>
-        {children && (
-          <Icon
-            as={ChevronDownIcon}
-            transition={"all .25s ease-in-out"}
-            transform={isOpen ? "rotate(180deg)" : ""}
-            w={6}
-            h={6}
-          />
-        )}
-      </Flex>
+//   return (
+//     <Stack spacing={4} onClick={children && onToggle}>
+//       <Flex
+//         py={2}
+//         as={Link}
+//         href={href ?? "#"}
+//         justify={"space-between"}
+//         align={"center"}
+//         _hover={{
+//           textDecoration: "none",
+//         }}
+//       >
+//         <Text
+//           fontWeight={600}
+//           color={useColorModeValue("gray.600", "gray.200")}
+//         >
+//           {label}
+//         </Text>
+//         {children && (
+//           <Icon
+//             as={ChevronDownIcon}
+//             transition={"all .25s ease-in-out"}
+//             transform={isOpen ? "rotate(180deg)" : ""}
+//             w={6}
+//             h={6}
+//           />
+//         )}
+//       </Flex>
 
-      <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
-        <Stack
-          mt={2}
-          pl={4}
-          borderLeft={1}
-          borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "gray.700")}
-          align={"start"}
-        >
-          {children &&
-            children.map((child) => (
-              <Link key={child.label} py={2} href={child.href}>
-                {child.label}
-              </Link>
-            ))}
-        </Stack>
-      </Collapse>
-    </Stack>
-  );
-};
+//       <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
+//         <Stack
+//           mt={2}
+//           pl={4}
+//           borderLeft={1}
+//           borderStyle={"solid"}
+//           borderColor={useColorModeValue("gray.200", "gray.700")}
+//           align={"start"}
+//         >
+//           {children &&
+//             children.map((child) => (
+//               <Link key={child.label} py={2} href={child.href}>
+//                 {child.label}
+//               </Link>
+//             ))}
+//         </Stack>
+//       </Collapse>
+//     </Stack>
+//   );
+// };
 
 const NAV_ITEMS = [
   {
     label: "MEN",
-    href: "/men",
+    href: "/men-clothing",
     children: [
-        { label: "Topwear", href: "top-wear-men" },
-        { label: "Bottomwear", href: "bottom-wear-men" },
-        { label: "Sports & Activewear", href: "sports-wear-men" },
-        {
-          subLabel: "Printed T-Shirts",
-          href: "printed T-shirts",
-        },
-        {
-          subLabel: "Joggers",
-          href: "printed T-shirts",
-        },
-        {
-          subLabel: "Active T-Shirts",
-          href: "printed T-shirts",
-        },
-        {
-          subLabel: "Plain T-Shirts",
-          href: "#",
-        },
-        {
-          subLabel: "Pajams",
-          href: "#",
-        },
-        {
-          subLabel: "Sports T-Shirts",
-          href: "#",
-        },
-  
-        {
-          subLabel: "Shirts",
-          href: "#",
-        },
-        {
-          subLabel: "Shorts",
-          href: "#",
-        },
-        {
-          subLabel: "Sports Joggers",
-          href: "#",
-        },
-        {
-          subLabel: "Kurtas",
-          href: "kurtas",
-        },
-        {
-          subLabel: "Jeans & Denims",
-          href: "#",
-        },
-        { label: "Footwear", href: "foot-wear-men" },
-        {
-          subLabel: "Polo T-Shirts",
-          href: "#",
-        },
-        {
-          subLabel: "Boxers",
-          href: "#",
-        },
-        {
-          subLabel: "Sliders",
-          href: "#",
-        },
-        {
-          subLabel: "Jackets",
-          href: "#",
-        },
-        {
-          subLabel: "Trousers & Pants",
-          href: "#",
-        },
-        {
-          subLabel: "Flip-Flops & Slipers",
-          href: "#",
-        },
-        { label: "Winterwear", href: "winter-wear-men" },
-        { label: "Accessories", href: "top-wear-men" },
-        {
-          subLabel: "Casual Shoes",
-          href: "#",
-        },
-        {
-          subLabel: "Sweatshirt & Hoodie",
-          href: "#",
-        },
-        {
-          subLabel: "Backpacks",
-          href: "/backpacks",
-        },
-        {
-          subLabel: "Clogs",
-          href: "#",
-        },
-        {
-          subLabel: "Winter Jackets",
-          href: "#",
-        },
-        {
-          subLabel: "Caps",
-          href: "#",
-        },
-        {},
-  
-        {
-          subLabel: "Winter Joggers",
-          href: "#",
-        },
-        {
-          subLabel: "Masks",
-          href: "#",
-        },
-        {},
-        {
-          subLabel: "Sweaters",
-          href: "#",
-        },
-        {
-          subLabel: "Socks",
-          href: "#",
-        },
-        {},
-      ],
+      { label: "Topwear", href: "top-wear-men" },
+      { label: "Bottomwear", href: "bottom-wear-men" },
+      { label: "Sports & Activewear", href: "sports-wear-men" },
+      {
+        subLabel: "Printed T-Shirts",
+        href: "printed T-shirts",
+      },
+      {
+        subLabel: "Joggers",
+        href: "printed T-shirts",
+      },
+      {
+        subLabel: "Active T-Shirts",
+        href: "printed T-shirts",
+      },
+      {
+        subLabel: "Plain T-Shirts",
+        href: "#",
+      },
+      {
+        subLabel: "Pajams",
+        href: "#",
+      },
+      {
+        subLabel: "Sports T-Shirts",
+        href: "#",
+      },
+
+      {
+        subLabel: "Shirts",
+        href: "#",
+      },
+      {
+        subLabel: "Shorts",
+        href: "#",
+      },
+      {
+        subLabel: "Sports Joggers",
+        href: "#",
+      },
+      {
+        subLabel: "Kurtas",
+        href: "kurtas",
+      },
+      {
+        subLabel: "Jeans & Denims",
+        href: "#",
+      },
+      { label: "Footwear", href: "foot-wear-men" },
+      {
+        subLabel: "Polo T-Shirts",
+        href: "#",
+      },
+      {
+        subLabel: "Boxers",
+        href: "#",
+      },
+      {
+        subLabel: "Sliders",
+        href: "#",
+      },
+      {
+        subLabel: "Jackets",
+        href: "#",
+      },
+      {
+        subLabel: "Trousers & Pants",
+        href: "#",
+      },
+      {
+        subLabel: "Flip-Flops & Slipers",
+        href: "#",
+      },
+      { label: "Winterwear", href: "winter-wear-men" },
+      { label: "Accessories", href: "top-wear-men" },
+      {
+        subLabel: "Casual Shoes",
+        href: "#",
+      },
+      {
+        subLabel: "Sweatshirt & Hoodie",
+        href: "#",
+      },
+      {
+        subLabel: "Backpacks",
+        href: "/backpacks",
+      },
+      {
+        subLabel: "Clogs",
+        href: "#",
+      },
+      {
+        subLabel: "Winter Jackets",
+        href: "#",
+      },
+      {
+        subLabel: "Caps",
+        href: "#",
+      },
+      {},
+
+      {
+        subLabel: "Winter Joggers",
+        href: "#",
+      },
+      {
+        subLabel: "Masks",
+        href: "#",
+      },
+      {},
+      {
+        subLabel: "Sweaters",
+        href: "#",
+      },
+      {
+        subLabel: "Socks",
+        href: "#",
+      },
+      {},
+    ],
   },
   {
     label: "WOMEN",
