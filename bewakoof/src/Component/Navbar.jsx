@@ -76,7 +76,7 @@ const Navbar = () => {
             />
           </NLink>
 
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
+          <Flex display={{ base: "none", md: "flex" }} ml={10} >
             <DesktopNav />
           </Flex>
         </Flex>
@@ -148,7 +148,7 @@ const DesktopNav = () => {
                 rounded={"xl"}
                 minW={"800px"}
               >
-                <Grid templateColumns="repeat(3, 1fr)" gap={3}>
+                <Grid templateColumns="repeat(3, 1fr)" gap={3}  pt="50px">
                   {navItem.children.map((child) => (
                     <DesktopSubNav key={child.label} {...child} />
                   ))}

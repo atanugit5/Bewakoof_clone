@@ -7,6 +7,7 @@ import Men from "../Pages/Men";
 import Women from "../Pages/Women";
 import Accessories from "../Pages/Accessories";
 import Footer from "./Footer";
+import MenClothing from "../Pages/MenClothing";
 
 const AllRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AllRoutes = () => {
           <Route path="/women-home" element={<Women />} />
           <Route path="/accessories-home" element={<Accessories />} />
         </Route>
+        <Route path="/men-clothing" element={<MenClothing/>}/>
       </Routes>
       <Footer/>
     </Box>

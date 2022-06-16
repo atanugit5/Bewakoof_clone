@@ -1368,7 +1368,6 @@
       "img2": "https://images.bewakoof.com/t540/breakbounce-men-s-navy-blue-polo-t-shirt-457793-1639762008-4.jpg",
       "img3": "https://images.bewakoof.com/t540/breakbounce-men-s-navy-blue-polo-t-shirt-457793-1639762012-5.jpg"
     },
-
     {
       "id": "mb1",
       "section": "bottomwear",
@@ -2137,7 +2136,6 @@
       "img2": "https://images.bewakoof.com/t540/men-s-blue-distressed-skinny-fit-jeans-496010-1651676478-4.jpg",
       "img3": "https://images.bewakoof.com/t540/men-s-blue-distressed-skinny-fit-jeans-496010-1651676482-5.jpg"
     },
-
     {
       "id": "mb33",
       "section": "bottomwear",
@@ -2666,7 +2664,6 @@
       "img2": "https://images.bewakoof.com/t540/men-s-beige-trousers-479446-1645780968-4.jpg",
       "img3": "https://images.bewakoof.com/t540/men-s-beige-trousers-479446-1645780964-3.jpg"
     },
-
     {
       "id": "ms1",
       "section": "sportswear",
@@ -3099,7 +3096,6 @@
       "img2": "https://images.bewakoof.com/t540/alcis-men-navy-blue-solid-track-pants-417979-1632916372-5.jpg",
       "img3": "https://images.bewakoof.com/t540/alcis-men-navy-blue-solid-track-pants-track-pant-417979-1640580818.jpg"
     },
-
     {
       "id": "mf1",
       "section": "footwear",
@@ -4300,7 +4296,6 @@
       "img2": "https://images.bewakoof.com/t540/neon-green-fleece-sweatshirt-313807-1635869757-3.jpg",
       "img3": "https://images.bewakoof.com/t540/neon-green-fleece-sweatshirt-313807-1635869764-5.jpg"
     },
-
     {
       "id": "ma1",
       "section": "accessories",
@@ -4445,7 +4440,6 @@
       "img2": "https://images.bewakoof.com/t540/i-look-at-you-printed-small-backpacks-printed-small-backpack-352269-1624879247.jpg",
       "img3": "https://images.bewakoof.com/t540/i-look-at-you-printed-small-backpacks-printed-small-backpack-352269-1624879248.jpg"
     },
-
     {
       "id": "ma7",
       "section": "accessories",
@@ -4805,9 +4799,46 @@
       "img1": "https://images.bewakoof.com/t540/balenzia-justice-league-men-s-cotton-loafer-socks-with-anti-slip-silicon-pack-of-3-411578-1632815254-2.jpg",
       "img2": "https://images.bewakoof.com/t540/balenzia-justice-league-men-s-cotton-loafer-socks-with-anti-slip-silicon-pack-of-3-411578-1632815271-5.jpg",
       "img3": "https://images.bewakoof.com/t540/balenzia-justice-league-men-s-cotton-loafer-socks-with-anti-slip-silicon-pack-of-3-411578-1632815266-4.jpg"
+    },
+    {
+      "params": {
+        "category": [
+          "Kurtas"
+        ],
+        "section": [
+          "bottomwear"
+        ]
+      },
+      "id": "bTMxtfu"
+    },
+    {
+      "params": {
+        "category": [
+          "Kurtas"
+        ]
+      },
+      "id": "l3pZQFI"
+    },
+    {
+      "params": {
+        "category": [
+          "Kurtas"
+        ],
+        "section": [
+          "bottomwear"
+        ]
+      },
+      "id": "fBZtyUy"
+    },
+    {
+      "params": {
+        "category": [
+          "Kurtas"
+        ]
+      },
+      "id": "zF5ja7b"
     }
   ],
-
   "women_clothing": [
     {
       "id": "wmt1",
@@ -4818,7 +4849,13 @@
       "size": [],
       "rating": "",
       "discount": "",
-      "description": { "des": "", "CoO": "", "Mb": "", "Pb": "", "Com": "" },
+      "description": {
+        "des": "",
+        "CoO": "",
+        "Mb": "",
+        "Pb": "",
+        "Com": ""
+      },
       "title": "",
       "image": "",
       "price": "",
@@ -4827,7 +4864,6 @@
       "img2": "",
       "img3": ""
     },
-
     {
       "id": "wmb1",
       "section": "bottomwear",
@@ -4837,7 +4873,13 @@
       "size": [],
       "rating": "",
       "discount": "",
-      "description": { "des": "", "CoO": "", "Mb": "", "Pb": "", "Com": "" },
+      "description": {
+        "des": "",
+        "CoO": "",
+        "Mb": "",
+        "Pb": "",
+        "Com": ""
+      },
       "title": "",
       "image": "",
       "price": "",
@@ -4855,7 +4897,13 @@
       "size": [],
       "rating": "",
       "discount": "",
-      "description": { "des": "", "CoO": "", "Mb": "", "Pb": "", "Com": "" },
+      "description": {
+        "des": "",
+        "CoO": "",
+        "Mb": "",
+        "Pb": "",
+        "Com": ""
+      },
       "title": "",
       "image": "",
       "price": "",
@@ -4873,7 +4921,13 @@
       "size": [],
       "rating": "",
       "discount": "",
-      "description": { "des": "", "CoO": "", "Mb": "", "Pb": "", "Com": "" },
+      "description": {
+        "des": "",
+        "CoO": "",
+        "Mb": "",
+        "Pb": "",
+        "Com": ""
+      },
       "title": "",
       "image": "",
       "price": "",
@@ -4891,7 +4945,13 @@
       "size": [],
       "rating": "",
       "discount": "",
-      "description": { "des": "", "CoO": "", "Mb": "", "Pb": "", "Com": "" },
+      "description": {
+        "des": "",
+        "CoO": "",
+        "Mb": "",
+        "Pb": "",
+        "Com": ""
+      },
       "title": "",
       "image": "",
       "price": "",
@@ -4909,7 +4969,13 @@
       "size": [],
       "rating": "",
       "discount": "",
-      "description": { "des": "", "CoO": "", "Mb": "", "Pb": "", "Com": "" },
+      "description": {
+        "des": "",
+        "CoO": "",
+        "Mb": "",
+        "Pb": "",
+        "Com": ""
+      },
       "title": "",
       "image": "",
       "price": "",
@@ -4927,7 +4993,13 @@
       "size": [],
       "rating": "",
       "discount": "",
-      "description": { "des": "", "CoO": "", "Mb": "", "Pb": "", "Com": "" },
+      "description": {
+        "des": "",
+        "CoO": "",
+        "Mb": "",
+        "Pb": "",
+        "Com": ""
+      },
       "title": "",
       "image": "",
       "price": "",
@@ -4936,7 +5008,6 @@
       "img2": "",
       "img3": ""
     },
-
     {
       "id": "wms1",
       "section": "sportswear",
@@ -4946,7 +5017,13 @@
       "size": [],
       "rating": "",
       "discount": "",
-      "description": { "des": "", "CoO": "", "Mb": "", "Pb": "", "Com": "" },
+      "description": {
+        "des": "",
+        "CoO": "",
+        "Mb": "",
+        "Pb": "",
+        "Com": ""
+      },
       "title": "",
       "image": "",
       "price": "",
@@ -4964,7 +5041,13 @@
       "size": [],
       "rating": "",
       "discount": "",
-      "description": { "des": "", "CoO": "", "Mb": "", "Pb": "", "Com": "" },
+      "description": {
+        "des": "",
+        "CoO": "",
+        "Mb": "",
+        "Pb": "",
+        "Com": ""
+      },
       "title": "",
       "image": "",
       "price": "",
@@ -4982,7 +5065,13 @@
       "size": [],
       "rating": "",
       "discount": "",
-      "description": { "des": "", "CoO": "", "Mb": "", "Pb": "", "Com": "" },
+      "description": {
+        "des": "",
+        "CoO": "",
+        "Mb": "",
+        "Pb": "",
+        "Com": ""
+      },
       "title": "",
       "image": "",
       "price": "",
@@ -5001,7 +5090,13 @@
     "size": [],
     "rating": "",
     "discount": "",
-    "description": { "des": "", "CoO": "", "Mb": "", "Pb": "", "Com": "" },
+    "description": {
+      "des": "",
+      "CoO": "",
+      "Mb": "",
+      "Pb": "",
+      "Com": ""
+    },
     "title": "",
     "image": "",
     "price": "",

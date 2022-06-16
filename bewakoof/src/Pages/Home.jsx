@@ -8,7 +8,7 @@ import Women from "./Women";
 const Home = () => {
   return (
     <Box pt="60px">
-        <Box w={"100%"} position={"fixed"} bgColor="white">
+        <Box w={"100%"} position={"fixed"}  bgColor="white" >
       <Box
         w="300px"
         h="50px"
@@ -20,6 +20,7 @@ const Home = () => {
         m="auto"
         display={"flex"}
         gap="60px"
+      
       >
         <Link to="/men-home">MEN</Link>
         <Link to="/women-home">WOMEN</Link>
