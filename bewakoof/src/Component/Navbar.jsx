@@ -28,16 +28,17 @@ import {
 } from "@chakra-ui/icons";
 import { BsCart3 } from "react-icons/bs";
 import { Link as NLink } from "react-router-dom";
+import CartCounter from "./CartCounter";
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box w="100%" position={"fixed"}>
-    <Box>
+    <Box w="100%" position={"fixed"} bgColor="white">
+    <Box w="90%" m="auto">
       <Flex
-        bg={useColorModeValue("white", "gray.800")}
-        color={useColorModeValue("gray.600", "white")}
+        // bg={useColorModeValue("white", "gray.800")}
+        // color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
@@ -67,6 +68,7 @@ const Navbar = () => {
             textalign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
+            bgColor="white"
           >
             <Image
               src="https://images.bewakoof.com/web/ic-desktop-pride-bwkf-logo.svg"
@@ -76,7 +78,7 @@ const Navbar = () => {
             />
           </NLink>
 
-          <Flex display={{ base: "none", md: "flex" }} ml={10} >
+          <Flex display={{ base: "none", md: "flex" }} ml={10} zIndex={10000} >
             <DesktopNav />
           </Flex>
         </Flex>
@@ -98,7 +100,7 @@ const Navbar = () => {
           </Button>
           <NLink to="/cart">
             <Box mb="-8px" textAlign="center">
-              {/* <CartCounter /> */}
+              <CartCounter/>
             </Box>
 
             <Icon as={BsCart3} fontSize={"30px"} />

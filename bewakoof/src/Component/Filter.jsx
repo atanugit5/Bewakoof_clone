@@ -1,17 +1,4 @@
-import {
-  Box,
-  Checkbox,
-  CheckboxGroup,
-  Text,
-  VStack,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItemOption,
-  MenuOptionGroup,
-  MenuDivider,
-  Button,
-} from "@chakra-ui/react";
+import { Box, Checkbox, CheckboxGroup, Text, VStack } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
@@ -23,34 +10,60 @@ const Filter = () => {
   const dispatch = useDispatch();
 
   const [color, setColor] = useState(searchParams.getAll("color") || []);
+  const [section, setSection] = useState(searchParams.getAll("section") || []);
   const [category, setCategory] = useState(
     searchParams.getAll("category") || []
   );
 
+  const sectionHandler = (values) => {
+    setSection(values);
+  };
   const colorHandler = (values) => {
     setColor(values);
   };
+
   const categoryHandler = (values) => {
     setCategory(values);
   };
 
   useEffect(() => {
-    if ((category,color)) {
-      setSearchParams({ category: category, color: color }, { replace: true });
+    if ((section, category, color)) {
+      setSearchParams(
+        { category: category, color: color, section: section },
+        { replace: true }
+      );
       let params = {
         category: searchParams.getAll("category"),
         color: searchParams.getAll("color"),
+        section: searchParams.getAll("section"),
       };
       dispatch(fetchData(params));
     }
-  }, [dispatch, searchParams, setSearchParams, category, color]);
+  }, [dispatch, searchParams, setSearchParams, section, color, category]);
 
   return (
-    <Box pl={"10px"} pt="50px">
-      <Box display={{ base: "none", md: "block" }}>
+    <Box pl={"10px"}>
+      <Box>
         <Text fontSize="2xl" color={"blue"}>
           Filter
         </Text>
+        <Text fontSize={"lg"} fontWeight={"600"}>
+          Filter By Section.
+        </Text>
+        <CheckboxGroup
+          colorScheme="green"
+          defaultValue={section}
+          onChange={sectionHandler}
+        >
+          <VStack alignItems={"baseline"} border="1px solid gray" p="10px">
+            <Checkbox value="topwear">Top-wear</Checkbox>
+            <Checkbox value="bottomwear">Bottom-wear</Checkbox>
+            <Checkbox value="sportswear">Sports-wear</Checkbox>
+            <Checkbox value="footwear">Foot-wear</Checkbox>
+            <Checkbox value="winterwear">Winter-wear</Checkbox>
+            <Checkbox value="accessories">Accessories</Checkbox>
+          </VStack>
+        </CheckboxGroup>
         <Text fontSize={"lg"} fontWeight={"600"}>
           Filter By Color.
         </Text>
@@ -84,29 +97,10 @@ const Filter = () => {
             <Checkbox value="Plain T-shirts">Plain T-shirts</Checkbox>
             <Checkbox value="Shirts">Shirts</Checkbox>
             <Checkbox value="Kurtas">Kurtas</Checkbox>
-            <Checkbox value="Boxers">Jackets</Checkbox>
+            <Checkbox value="Jackets">Jackets</Checkbox>
             <Checkbox value="Polo T-shirts">Polo T-shirts</Checkbox>
           </VStack>
         </CheckboxGroup>
-      </Box>
-      <Box display={{ base: "block", md: "none" }}>
-        <Menu closeOnSelect={false}>
-          <MenuButton as={Button} colorScheme="blue">
-            MenuItem
-          </MenuButton>
-          <MenuList minWidth="240px">
-            <MenuOptionGroup defaultValue="asc" title="Order" type="radio">
-              <MenuItemOption value="asc">Ascending</MenuItemOption>
-              <MenuItemOption value="desc">Descending</MenuItemOption>
-            </MenuOptionGroup>
-            <MenuDivider />
-            <MenuOptionGroup title="Country" type="checkbox">
-              <MenuItemOption value="email">Email</MenuItemOption>
-              <MenuItemOption value="phone">Phone</MenuItemOption>
-              <MenuItemOption value="country">Country</MenuItemOption>
-            </MenuOptionGroup>
-          </MenuList>
-        </Menu>
       </Box>
     </Box>
   );

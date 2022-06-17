@@ -29,5 +29,5 @@ export const fetchData = (payload) => (dispatch) => {
     .get("/men-clothing", { params: { ...payload } })
     .then((r) =>{ console.log("res",r);
     dispatch(fetchDataSuccess(r.data))})
-    .catch((e) => dispatch(fetchDataFailure(e.data)));
+    .catch((e) => {console.log("err",e);dispatch(fetchDataFailure(e.data))});
 };

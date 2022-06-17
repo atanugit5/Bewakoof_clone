@@ -21,7 +21,7 @@ const MenClothing = () => {
   }, []);
   console.log("men",men);
   return (
-    <Box >
+    <Box pt="80px">
       <Stack display={{ md: "flex" }} flexDirection={{ md: "row" }} gap={"2rem"}>
         <Box minWidth={"15 rem"} w="20%">
           <Filter />
@@ -29,11 +29,11 @@ const MenClothing = () => {
         <Box w="80%">
           <Heading as="h2">Products</Heading>
           {loading && <Heading as="h4">Loading.....</Heading>}
-          <Flex flexWrap="wrap" justifyContent="space-around">
+          <Box display="flex" flexWrap="wrap" justifyContent="space-around">
             {men.map((el) => (
               <ProductItem key={el.id} {...el} />
             ))}
-          </Flex>
+          </Box>
           {error && <Heading as="h2">Error 404</Heading>}
         </Box>
       </Stack>

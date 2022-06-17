@@ -4839,7 +4839,7 @@
       "id": "zF5ja7b"
     }
   ],
-  "women_clothing": [
+  "women-clothing": [
     {
       "id": "wmt1",
       "section": "topwear",
@@ -5081,28 +5081,80 @@
       "img3": ""
     }
   ],
-  "mobile-cover": {
-    "id": "",
-    "section": "",
-    "category": "",
-    "brand": "",
-    "color": "",
-    "size": [],
-    "rating": "",
-    "discount": "",
-    "description": {
-      "des": "",
-      "CoO": "",
-      "Mb": "",
-      "Pb": "",
-      "Com": ""
+  "mobile-cover": [
+    {
+      "id": "",
+      "section": "",
+      "category": "",
+      "brand": "",
+      "color": "",
+      "size": [],
+      "rating": "",
+      "discount": "",
+      "description": {
+        "des": "",
+        "CoO": "",
+        "Mb": "",
+        "Pb": "",
+        "Com": ""
+      },
+      "title": "",
+      "image": "",
+      "price": "",
+      "Sprice": "",
+      "img1": "",
+      "img2": "",
+      "img3": ""
+    }
+  ],
+  "cart": [
+    {
+      "id": "mt11",
+      "section": "topwear",
+      "category": "Plain T-shirts",
+      "brand": "",
+      "color": "Yellow",
+      "size": [],
+      "rating": 4.5,
+      "discount": "50%",
+      "description": {
+        "des": "Elevate your wardrobe game with our Men's Ceylon Yellow Full Sleeve T-Shirt. Team it up with jeans and sneakers for a cool and smart look.",
+        "CoO": "India",
+        "Mb": " Bewakoof Brands Pvt Ltd, Sairaj Logistic Hub #A5, Bmc Pipeline Road, Opposite All Saints High School, Amane, Bhiwandi, Thane, Maharashtra - 421302",
+        "Pb": "Bewakoof Brands Pvt Ltd, Sairaj Logistic Hub #A5, Bmc Pipeline Road, Opposite All Saints High School, Amane, Bhiwandi, Thane, Maharashtra - 421302",
+        "Com": "Men's T-Shirt"
+      },
+      "title": "Ceylon Yellow Full Sleeve T-Shirt",
+      "image": "https://images.bewakoof.com/t540/ceylon-yellow-full-sleeve-t-shirt-314404-1638711664-1.jpg",
+      "price": 399,
+      "Sprice": 799,
+      "img1": "https://images.bewakoof.com/t540/ceylon-yellow-full-sleeve-t-shirt-men-s-plain-full-sleeve-t-shirts-314404-1622205169.jpg",
+      "img2": "https://images.bewakoof.com/t540/ceylon-yellow-full-sleeve-t-shirt-men-s-plain-full-sleeve-t-shirts-314404-1622205176.jpg",
+      "img3": "https://images.bewakoof.com/t540/ceylon-yellow-full-sleeve-t-shirt-men-s-plain-full-sleeve-t-shirts-314404-1622205173.jpg"
     },
-    "title": "",
-    "image": "",
-    "price": "",
-    "Sprice": "",
-    "img1": "",
-    "img2": "",
-    "img3": ""
-  }
+    {
+      "id": "mt1",
+      "section": "topwear",
+      "category": "Printed T-shirts",
+      "brand": "",
+      "color": "Black",
+      "size": [],
+      "rating": 4.6,
+      "discount": "70%",
+      "description": {
+        "des": "Donne the suave personality of the renowned supervillain with this Official Marvel Killmonger Men's Half Sleeve T-Shirt. Pair this black t-shirt with your favourite denim and swaggers boots for a grunge fashion appeal.",
+        "CoO": "India",
+        "Mb": "Bewakoof Brands Pvt Ltd, Sairaj Logistic Hub #A5, Bmc Pipeline Road, Opposite All Saints High School, Amne, Bhiwandi,Thane, Maharashtra 421302",
+        "Pb": "Bewakoof Brands Pvt Ltd, Sairaj Logistic Hub #A5, Bmc Pipeline Road, Opposite All Saints High School, Amne, Bhiwandi,Thane, Maharashtra 421302",
+        "Com": "Men's T-Shirt"
+      },
+      "title": "Men's Black Killmonger Graphic Printed T-shirt",
+      "image": "https://images.bewakoof.com/t540/killmonger-half-sleeve-t-shirt-509349-1655101044-1.jpg",
+      "price": 299,
+      "Sprice": 999,
+      "img1": "https://images.bewakoof.com/t540/killmonger-half-sleeve-t-shirt-509349-1655101048-2.jpg",
+      "img2": "https://images.bewakoof.com/t540/killmonger-half-sleeve-t-shirt-509349-1655101051-3.jpg",
+      "img3": "https://images.bewakoof.com/t540/killmonger-half-sleeve-t-shirt-509349-1655101058-5.jpg"
+    }
+  ]
 }
