@@ -16,8 +16,8 @@ const Orders = () => {
       <Heading as="h1" textAlign={"center"}>
         Your Orders
       </Heading>
-      <Box>
-        {order.map((el) => (
+      <Box m="80px">
+        {order.length ? (<Box> {order.map((el) => (
           <Flex m="20px">
             <Image src={el.image} w="200px" h="200px"/>
             <Box m="50px">
@@ -25,7 +25,9 @@ const Orders = () => {
               <Text>${el.price}</Text>
             </Box>
           </Flex>
-        ))}
+        ))}</Box>):(<Text fontSize={"2xl"}>No order item found</Text>)}
+       
+
       </Box>
     </Box>
   );
