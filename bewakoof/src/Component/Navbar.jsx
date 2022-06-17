@@ -29,6 +29,7 @@ import {
 import { BsCart3 } from "react-icons/bs";
 import { Link as NLink } from "react-router-dom";
 import CartCounter from "./CartCounter";
+import Profile from "./Profile";
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -96,7 +97,7 @@ const Navbar = () => {
             variant={"link"}
             href={"#"}
           >
-            Login
+            <Profile/>
           </Button>
           <NLink to="/cart">
             <Box mb="-8px" textAlign="center">
@@ -186,16 +187,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
             {subLabel}
           </Text>
 
-          {/* <Flex
-          transition={"all .3s ease"}
-          transform={"translateX(-10px)"}
-          opacity={0}
-          _groupHover={{ opacity: "100%", transform: "translateX(0)", textDecoration:"underline"}}
-          justify={"flex-end"}
-          align={"center"}
-          flex={1}
-        >
-        </Flex> */}
+         
         </Stack>
       </NLink>
     </Box>

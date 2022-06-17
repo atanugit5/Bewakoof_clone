@@ -27,7 +27,7 @@ export const fetchData = (payload) => (dispatch) => {
 
   axios
     .get("/men-clothing", { params: { ...payload } })
-    .then((r) =>{ console.log("res",r);
+    .then((r) =>{ console.log("res",r.message);
     dispatch(fetchDataSuccess(r.data))})
     .catch((e) => {console.log("err",e);dispatch(fetchDataFailure(e.data))});
 };

@@ -99,6 +99,18 @@ const Filter = () => {
             <Checkbox value="Kurtas">Kurtas</Checkbox>
             <Checkbox value="Jackets">Jackets</Checkbox>
             <Checkbox value="Polo T-shirts">Polo T-shirts</Checkbox>
+            <Checkbox value="Sweaters">Sweaters</Checkbox>
+            <Checkbox value="Sweatshirt & Hoodie">Sweatshirt & Hoodie</Checkbox>
+             <Checkbox value="Joggers">Joggers</Checkbox>
+            <Checkbox value="Pajamas">Pajamas</Checkbox>
+            <Checkbox value="Boxers">Boxers</Checkbox>
+            <Checkbox value="Jeans & Denims">Jeans & Denims</Checkbox>
+            <Checkbox value="Sports Shorts">Sports Shorts</Checkbox>
+            <Checkbox value="Sliders">Sliders</Checkbox>
+            <Checkbox value="Casuals shoes">Casuals shoes</Checkbox>
+            <Checkbox value="Backpacks">Backpacks</Checkbox>
+            <Checkbox value="Caps">Caps</Checkbox>
+            <Checkbox value="Socks">Socks</Checkbox>
           </VStack>
         </CheckboxGroup>
       </Box>

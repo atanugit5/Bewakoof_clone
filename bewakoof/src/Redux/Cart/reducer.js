@@ -3,6 +3,7 @@ const initialState = {
   loading: "",
   error: "",
   cart: [],
+  order:[]
 };
 
 export const cartReducer = (state = initialState, action) => {
@@ -38,6 +39,18 @@ export const cartReducer = (state = initialState, action) => {
       return { ...state, loading: false, error: payload };
     //====================//
     
+    case types.FETCH_ORDER_REQUEST:
+      return { ...state, loading: true, error: false };
+    case types.FETCH_ORDER_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        order:payload,
+        error: false,
+      };
+    case types.FETCH_ORDER_FAILURE:
+      return { ...state, loading: false, error: payload };
+      //================================//
     default:
       return state;
   }

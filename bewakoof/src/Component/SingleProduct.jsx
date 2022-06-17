@@ -25,10 +25,8 @@ import { getSingleProduct } from "../Redux/SingleProduct/action";
 const SingleProduct = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const product = useSelector(
-    (store) => store.singleProduct.currentProduct
-  );
-  console.log("p",product);
+  const product = useSelector((store) => store.singleProduct.currentProduct);
+  console.log("p", product);
 
   useEffect(() => {
     if (id) {
@@ -48,40 +46,40 @@ const SingleProduct = () => {
         py={{ base: 18, md: 24 }}
       >
         <Flex gap="10px">
-            <Box display={"flex"} flexDirection="column" justifyContent={"space-between"}>
+          <Box
+            display={"flex"}
+            flexDirection="column"
+            justifyContent={"space-between"}
+          >
             <Image
-            rounded={"md"}
-            alt={"product image"}
-            src={product.image}
-            h="100px"
-            w="100px"
-            
-          />
-             <Image
-            rounded={"md"}
-            alt={"product image"}
-            src={product.img1}
-            h="100px"
-            w="100px"
-            
-          />
-             <Image
-            rounded={"md"}
-            alt={"product image"}
-            src={product.img2}
-            h="100px"
-            w="100px"
-            
-          />
-             <Image
-            rounded={"md"}
-            alt={"product image"}
-            src={product.img3}
-            h="100px"
-            w="100px"
-            
-          />
-            </Box>
+              rounded={"md"}
+              alt={"product image"}
+              src={product.image}
+              h="100px"
+              w="100px"
+            />
+            <Image
+              rounded={"md"}
+              alt={"product image"}
+              src={product.img1}
+              h="100px"
+              w="100px"
+            />
+            <Image
+              rounded={"md"}
+              alt={"product image"}
+              src={product.img2}
+              h="100px"
+              w="100px"
+            />
+            <Image
+              rounded={"md"}
+              alt={"product image"}
+              src={product.img3}
+              h="100px"
+              w="100px"
+            />
+          </Box>
           <Image
             rounded={"md"}
             alt={"product image"}
@@ -107,6 +105,9 @@ const SingleProduct = () => {
               fontSize={"2xl"}
             >
               ${product.price}
+            </Text>
+            <Text textDecoration={"line-through"} color={"gray.600"}>
+              ${product.Sprice}
             </Text>
           </Box>
 

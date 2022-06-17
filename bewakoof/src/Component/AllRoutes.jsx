@@ -10,6 +10,9 @@ import Footer from "./Footer";
 import MenClothing from "../Pages/MenClothing";
 import SingleProduct from "./SingleProduct";
 import Cart from "../Pages/Cart";
+import Orders from "../Pages/Orders";
+import Login from "./Login";
+import PrivateRoute from "./PrivateRoute";
 
 const AllRoutes = () => {
   return (
@@ -23,8 +26,10 @@ const AllRoutes = () => {
         </Route>
         <Route path="/men-clothing" element={<MenClothing/>}/>
         <Route path="/men-clothing/:id" element={<SingleProduct/>} />
-      <Route path="/cart" element={<Cart/>} />
-      
+      <Route path="/cart" element={<PrivateRoute><Cart/></PrivateRoute>} />
+      <Route path="/orders" element={<PrivateRoute><Orders/></PrivateRoute>} />
+      <Route path="/login" element={<Login/>} />
+
       </Routes>
       <Footer/>
     </Box>
