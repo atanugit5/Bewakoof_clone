@@ -46,7 +46,7 @@ const Cart = () => {
             src="https://images.bewakoof.com/images/doodles/empty-cart-page-doodle.png"
           />
           <Text fontSize={"2xl"}>Nothing in the bag</Text>
-          <Box>
+          <Box w="200px" border="1px solid green" m="20px">
             <Link to="/men-clothing">Continue shopping...</Link>
           </Box>
         </Box>

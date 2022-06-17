@@ -18,7 +18,7 @@ const MenClothing = () => {
       let params = { category: searchParams.getAll("category") };
       dispatch(fetchData(params));
     }
-  }, []);
+  }, [dispatch]);
   console.log("men",men);
   return (
     <Box pt="80px">
