@@ -266,45 +266,45 @@ const NAV_ITEMS = [
     label: "MEN",
     href: "/men-clothing",
     children: [
-      { label: "Topwear", href: "top-wear-men" },
-      { label: "Bottomwear", href: "bottom-wear-men" },
-      { label: "Sports & Activewear", href: "sports-wear-men" },
+      { label: "Topwear",href: "/men-clothing",},
+      { label: "Bottomwear", href: "/men-clothing", },
+      { label: "Sports & Activewear",href: "/men-clothing", },
       {
         subLabel: "Printed T-Shirts",
-        href: "printed T-shirts",
+        href: "/men-clothing",
       },
       {
         subLabel: "Joggers",
-        href: "printed T-shirts",
+         href: "/men-clothing",
       },
       {
         subLabel: "Active T-Shirts",
-        href: "printed T-shirts",
+        href: "/men-clothing",
       },
       {
         subLabel: "Plain T-Shirts",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Pajams",
-        href: "#",
+       href: "/men-clothing",
       },
       {
         subLabel: "Sports T-Shirts",
-        href: "#",
+       href: "/men-clothing",
       },
 
       {
         subLabel: "Shirts",
-        href: "#",
+       href: "/men-clothing",
       },
       {
         subLabel: "Shorts",
-        href: "#",
+       href: "/men-clothing",
       },
       {
         subLabel: "Sports Joggers",
-        href: "#",
+       href: "/men-clothing",
       },
       {
         subLabel: "Kurtas",
@@ -312,124 +312,124 @@ const NAV_ITEMS = [
       },
       {
         subLabel: "Jeans & Denims",
-        href: "#",
+       href: "/men-clothing",
       },
-      { label: "Footwear", href: "foot-wear-men" },
+      { label: "Footwear", href: "/men-clothing", },
       {
         subLabel: "Polo T-Shirts",
-        href: "#",
+       href: "/men-clothing",
       },
       {
         subLabel: "Boxers",
-        href: "#",
+       href: "/men-clothing",
       },
       {
         subLabel: "Sliders",
-        href: "#",
+       href: "/men-clothing",
       },
       {
         subLabel: "Jackets",
-        href: "#",
+       href: "/men-clothing",
       },
       {
         subLabel: "Trousers & Pants",
-        href: "#",
+       href: "/men-clothing",
       },
       {
         subLabel: "Flip-Flops & Slipers",
-        href: "#",
+       href: "/men-clothing",
       },
-      { label: "Winterwear", href: "winter-wear-men" },
-      { label: "Accessories", href: "top-wear-men" },
+      { label: "Winterwear", href: "/men-clothing",},
+      { label: "Accessories",href: "/men-clothing",},
       {
         subLabel: "Casual Shoes",
-        href: "#",
+       href: "/men-clothing",
       },
       {
         subLabel: "Sweatshirt & Hoodie",
-        href: "#",
+       href: "/men-clothing",
       },
       {
         subLabel: "Backpacks",
-        href: "/backpacks",
+        href: "/men-clothing",
       },
       {
         subLabel: "Clogs",
-        href: "#",
+       href: "/men-clothing",
       },
       {
         subLabel: "Winter Jackets",
-        href: "#",
+       href: "/men-clothing",
       },
       {
         subLabel: "Caps",
-        href: "#",
+       href: "/men-clothing",
       },
       {},
 
       {
         subLabel: "Winter Joggers",
-        href: "#",
+       href: "/men-clothing",
       },
       {
         subLabel: "Masks",
-        href: "#",
+       href: "/men-clothing",
       },
       {},
       {
         subLabel: "Sweaters",
-        href: "#",
+       href: "/men-clothing",
       },
       {
         subLabel: "Socks",
-        href: "#",
+       href: "/men-clothing",
       },
       {},
     ],
   },
   {
     label: "WOMEN",
-    href: "#",
+    href: "/men-clothing",
     children: [
-      { label: "Topwear", href: "top-wear-men" },
-      { label: "Bottomwear", href: "bottom-wear-men" },
-      { label: "Sports & Activewear", href: "sports-wear-men" },
+      { label: "Topwear", href: "/men-clothing", },
+      { label: "Bottomwear", href: "/men-clothing", },
+      { label: "Sports & Activewear",href: "/men-clothing",},
       {
         subLabel: "Printed T-Shirts",
-        href: "printed T-shirts",
+        href: "/men-clothing",
       },
       {
         subLabel: "Joggers",
-        href: "printed T-shirts",
+       href: "/men-clothing",
       },
       {
         subLabel: "Active T-Shirts",
-        href: "printed T-shirts",
+       href: "/men-clothing",
       },
       {
         subLabel: "Plain T-Shirts",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Pajams",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Sports T-Shirts",
-        href: "#",
+        href: "/men-clothing",
       },
 
       {
         subLabel: "Shirts",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Shorts",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Sports Joggers",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Kurtas",
@@ -437,42 +437,42 @@ const NAV_ITEMS = [
       },
       {
         subLabel: "Jeans & Denims",
-        href: "#",
+        href: "/men-clothing",
       },
       { label: "Footwear", href: "foot-wear-men" },
       {
         subLabel: "Polo T-Shirts",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Boxers",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Sliders",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Jackets",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Trousers & Pants",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Flip-Flops & Slipers",
-        href: "#",
+        href: "/men-clothing",
       },
-      { label: "Winterwear", href: "winter-wear-men" },
-      { label: "Accessories", href: "top-wear-men" },
+      { label: "Winterwear", href: "/men-clothing", },
+      { label: "Accessories", href: "/men-clothing", },
       {
         subLabel: "Casual Shoes",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Sweatshirt & Hoodie",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Backpacks",
@@ -480,34 +480,34 @@ const NAV_ITEMS = [
       },
       {
         subLabel: "Clogs",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Winter Jackets",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Caps",
-        href: "#",
+        href: "/men-clothing",
       },
       {},
 
       {
         subLabel: "Winter Joggers",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Masks",
-        href: "#",
+        href: "/men-clothing",
       },
       {},
       {
         subLabel: "Sweaters",
-        href: "#",
+        href: "/men-clothing",
       },
       {
         subLabel: "Socks",
-        href: "#",
+        href: "/men-clothing",
       },
       {},
     ],
@@ -515,19 +515,19 @@ const NAV_ITEMS = [
   {
     label: "MOBILE COVER",
     children: [
-      {
-        label: "Job Board",
+      // {
+      //   label: "Job Board",
 
-        subLabel: "Find your dream design job",
-        href: "#",
-        subLabel: "Find your dream design job",
-        href: "#",
-      },
-      {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
-        href: "#",
-      },
+      //   subLabel: "Find your dream design job",
+      //   href: "#",
+      //   subLabel: "Find your dream design job",
+      //   href: "#",
+      // },
+      // {
+      //   label: "Freelance Projects",
+      //   subLabel: "An exclusive list for contract work",
+      //   href: "#",
+      // },
     ],
   },
 ];
